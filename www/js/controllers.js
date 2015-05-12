@@ -6,11 +6,17 @@ angular.module("goodsApp", ['ngRoute'])
         .config(['$routeProvider', '$locationProvider',function($routeProvider, $locationProvider) {
           $routeProvider
               .when('#/', {
-                templateUrl:"views/goodList.html"
+                templateUrl:"views/goodList.html",
+                controller:"goodsListCtrl"
               })
               .when('#/:listId', {
-                templateUrl:"views/goodList.html"
-              })
+                templateUrl:"views/good.html",
+                controller:"goodsCtrl"
+              });
+              // .othewise('#/', {
+              //   templateUrl:"views/goodList.html",
+              //   controller:"goodsListCtrl"
+              // })
 
               //todo finish here
         }])

@@ -1,0 +1,62 @@
+/* app css stylesheet */
+
+* {
+	margin:0;
+	padding: 0;
+}
+
+body {
+  padding-top: 20px;
+  font-size: 16px;
+}
+
+header {
+	margin-bottom: 1%;
+	background: green;
+	color: #fff;
+	padding: 1%;
+}
+
+.pageHeader {
+	font-size: 2.5em;
+}
+
+.main {
+	/*margin: 0 auto;*/
+	margin-bottom: 10px;
+}
+
+.listItem {
+	background: #E7E3E3;
+	border-radius: 5px;
+	margin: 0 0 4px 0;
+	border: 1px solid #fff;
+	display: block;
+}
+
+form {
+	position: relative;
+}
+
+.full-width {
+	width: 100%;
+}
+
+input {
+	width: 100%;
+}
+
+.inner-button {
+	position: absolute;
+	right: 0;
+	top:0;
+	width: 10%;
+}
+
+/*.main:after {
+  content:"";
+  display:table;
+  clear:both;
+}*/
+
+

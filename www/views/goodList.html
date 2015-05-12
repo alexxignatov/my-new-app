@@ -1,0 +1,22 @@
+<div ng-controller="goodsListCtrl">
+  <div class="row" >
+    <header>
+      <div class="pageHeader">All goods</div>
+    </header>
+  </div>
+
+  <div class="row">
+    <div class="main">
+      <form ng-submit="addList()">
+        <input type="text" ng-model="newListName" placeholder="Enter new list name" autofocus></input>
+        <button class="inner-button" ng-cloak ng-show="newListName !== ''">add</button>
+      </form>
+    </div>        
+  </div>
+
+  <div class="row">
+      <a href="#/{{list.name}}" class="listItem col-sx-12 col-md-4" ng-repeat="list in allLists track by $index">
+        <div ng-bind="list.name"></div>
+      </a>
+  </div>
+</div>
